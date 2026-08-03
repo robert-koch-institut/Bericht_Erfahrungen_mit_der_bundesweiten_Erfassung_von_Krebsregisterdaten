@@ -83,7 +83,7 @@
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-03 17:40:30
+    document created:        2026-08-03 18:02:54
 
 
 
@@ -359,9 +359,9 @@ and z_tum_id in (select distinct z_tum_id from OPS where left(ops.Code,1) in ('5
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_26_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_26_6.svg">
-  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="report_files/output_26_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_26_7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="report_files/output_26_7.svg">
+  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="report_files/output_26_7.svg">
 </picture>
     
 
@@ -805,10 +805,9 @@ and z_op_order = 1
 
 #### <a id='toc1_4_6_1_'></a>[4.6.1 Nach Brustkrebs](#toc0_)
 
-Für Patientinnen mit Brustkrebsdiagnosen und Operation ohne Residualtumor (`R0`) aus den Jahren 2020/2021 ist bis Ende 2023 in **5 %** der Fälle (nach Bundesländern: 2-8 %, 4 Bundesländer ohne Angaben, Abbildung 13) ein Verlaufsereignis dokumentiert. In gut zwei Drittel dieser Fälle betraf dies Fernmetastasen, teilweise in Kombination mit Lokalrezidiven und Lymphknotenmetastasen. Für diese Auswertungen wurden verschiedene Variablen genutzt, Abbildung 14 zeigt alle Kombinationen der relevanten Ausprägungen. Es wurde kein Mindestabstand zum Diagnosedatum festgelegt. 
+Für Patientinnen mit Brustkrebsdiagnosen und Operation ohne Residualtumor (`R0`) aus den Jahren 2020/2021 ist in **5 %** der Fälle (nach Bundesländern: 2-8 %, 4 Bundesländer ohne Angaben, Abbildung 13) ein Verlaufsereignis dokumentiert. In gut zwei Drittel dieser Fälle betraf dies Fernmetastasen, teilweise in Kombination mit Lokalrezidiven und Lymphknotenmetastasen. Für diese Auswertungen wurden verschiedene Variablen genutzt, Abbildung 14 zeigt alle Kombinationen der relevanten Ausprägungen. Es wurde kein Mindestabstand zum Diagnosedatum festgelegt. 
 
-> [!CAUTION]
-> Zeitraum bis Ende 2023 nach Brustkrebsdiagnose in 2020/2021
+> [!NOTE]
 > 
 > Kategorien:
 >   - `1_fo_relapse` - Rezidiven
@@ -911,9 +910,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_53_8.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_53_8.svg">
-  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="report_files/output_53_8.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_53_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="report_files/output_53_6.svg">
+  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="report_files/output_53_6.svg">
 </picture>
     
 
