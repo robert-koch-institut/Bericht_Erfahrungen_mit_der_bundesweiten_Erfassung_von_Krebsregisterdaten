@@ -1,0 +1,8 @@
+has_gesamt;has_lokal;has_lymph;has_fm
+False;False;False;6
+False;False;True;1
+False;True;False;0
+False;True;True;1
+True;False;False;0
+True;True;False;1
+True;True;True;2

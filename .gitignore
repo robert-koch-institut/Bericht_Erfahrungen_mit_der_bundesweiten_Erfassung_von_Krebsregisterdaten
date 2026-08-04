@@ -1,3 +1,5 @@
 .local/
 .env*
 .DS_store
+filters.py
+__pycache__/
