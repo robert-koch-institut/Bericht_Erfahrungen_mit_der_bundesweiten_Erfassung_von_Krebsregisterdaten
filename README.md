@@ -68,7 +68,7 @@
 ## <a id='toc1_1_'></a>[1 Informationen zum Dokument](#toc0_)
 
 - Der vorliegende Bericht wird überarbeitet, sobald eine für die dargestellten Auswertungen relevante Aktualisierung der Datenlieferungen der Krebsregister vorliegt. Frühere Versionen des Berichts bleiben über die Versionshistorie des GitHub-Repositoriums weiterhin einsehbar und zitierfähig.
-- Der Bericht ist [alternativ als pdf verfügbar](./report.pdf), wird jedoch für die online Darstellung optimiert.
+- Der Bericht ist [alternativ als pdf verfügbar](https://raw.githubusercontent.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/main/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten.pdf), wird jedoch für die online Darstellung optimiert.
 - Die jeweils angewendeten Filter sind für jede Auswertung dargestellt, jeweils zur besseren Einordnung als Anteil an der Gesamtzahl aller Krebsfälle.
 - Relative Balkendiagramme enthalten zum Gesamtvergleich ein zusätzliches Element `Total`.
 - Die verwendeten Filter lassen sich anhand der ausklappbaren SQL-Abfragen exakt nachvollziehen.
@@ -83,7 +83,7 @@
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-05 09:16:09
+    document created:        2026-08-05 11:31:45
 
 
 
