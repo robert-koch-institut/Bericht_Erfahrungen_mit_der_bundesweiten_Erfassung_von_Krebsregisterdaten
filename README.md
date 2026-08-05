@@ -68,13 +68,13 @@
 ## <a id='toc1_1_'></a>[1 Informationen zum Dokument](#toc0_)
 
 - Der vorliegende Bericht wird überarbeitet, sobald eine für die dargestellten Auswertungen relevante Aktualisierung der Datenlieferungen der Krebsregister vorliegt. Frühere Versionen des Berichts bleiben über die Versionshistorie des GitHub-Repositoriums weiterhin einsehbar und zitierfähig.
-- Der Bericht ist [alternativ als pdf verfügbar](./report.pdf), ist jedoch für die online Darstellung optimiert.
+- Der Bericht ist [alternativ als pdf verfügbar](./report.pdf), wird jedoch für die online Darstellung optimiert.
 - Die jeweils angewendeten Filter sind für jede Auswertung dargestellt, jeweils zur besseren Einordnung als Anteil an der Gesamtzahl aller Krebsfälle.
 - Relative Balkendiagramme enthalten zum Gesamtvergleich ein zusätzliches Element `Total`.
 - Die verwendeten Filter lassen sich anhand der ausklappbaren SQL-Abfragen exakt nachvollziehen.
 - Die in den Diagrammen angegebene Fallzahl `n=` weist auf die zugrunde liegende Grundgesamtheit hin.
 - Die in den Diagrammen verwendeten aggregierten Daten sind in einem [Ordner](https://github.com/smeisegeier/cancerdata-quality/tree/dev/src/section-12-report/data) verfügbar.
-- Der Quellcode dieses Berichts ist [als Juypter Notebook verfügbar](./report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
+- Der Quellcode dieses Berichts ist als [Juypter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
 
 **Datenstand: Diagnosejahr 2023**
 
@@ -83,7 +83,7 @@
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-04 18:39:37
+    document created:        2026-08-05 09:16:09
 
 
 
@@ -233,9 +233,9 @@ and z_kkr <> 7
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_23_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_23_6.svg">
-  <img alt="Abbildung 1: Fehlender Anteil zum Grading" src="report_files/output_23_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_23_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_23_6.svg">
+  <img alt="Abbildung 1: Fehlender Anteil zum Grading" src="./img/report_files/output_23_6.svg">
 </picture>
     
 
@@ -295,9 +295,9 @@ and
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_25_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_25_6.svg">
-  <img alt="Abbildung 2: Anteile übermittelter pathologischer und klinischer T-Stadien" src="report_files/output_25_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_25_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_25_6.svg">
+  <img alt="Abbildung 2: Anteile übermittelter pathologischer und klinischer T-Stadien" src="./img/report_files/output_25_6.svg">
 </picture>
     
 
@@ -359,9 +359,9 @@ and z_tum_id in (select distinct z_tum_id from OPS where left(ops.Code,1) in ('5
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_27_7.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_27_7.svg">
-  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="report_files/output_27_7.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_27_7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_27_7.svg">
+  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_27_7.svg">
 </picture>
     
 
@@ -406,9 +406,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_31_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_31_6.svg">
-  <img alt="Abbildung 4: Anteil der Fälle ohne Therapieangaben" src="report_files/output_31_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_31_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_31_6.svg">
+  <img alt="Abbildung 4: Anteil der Fälle ohne Therapieangaben" src="./img/report_files/output_31_6.svg">
 </picture>
     
 
@@ -459,9 +459,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_33_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_33_6.svg">
-  <img alt="Abbildung 5: Anteil Fälle mit dokumentierter Brust OP bei C50" src="report_files/output_33_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_33_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_33_6.svg">
+  <img alt="Abbildung 5: Anteil Fälle mit dokumentierter Brust OP bei C50" src="./img/report_files/output_33_6.svg">
 </picture>
     
 
@@ -497,9 +497,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_35_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_35_6.svg">
-  <img alt="Abbildung 6: Anteil Fälle mit dokumentierter OP bei Darmkrebs" src="report_files/output_35_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_35_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_35_6.svg">
+  <img alt="Abbildung 6: Anteil Fälle mit dokumentierter OP bei Darmkrebs" src="./img/report_files/output_35_6.svg">
 </picture>
     
 
@@ -536,9 +536,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_37_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_37_6.svg">
-  <img alt="Abbildung 7: Anteil Fälle mit dokumentierter OP beim Malignen Melanom" src="report_files/output_37_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_37_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_37_6.svg">
+  <img alt="Abbildung 7: Anteil Fälle mit dokumentierter OP beim Malignen Melanom" src="./img/report_files/output_37_6.svg">
 </picture>
     
 
@@ -575,9 +575,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_39_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_39_6.svg">
-  <img alt="Abbildung 8: Anteil Fälle mit dokumentierter OP beim Hodenkrebs" src="report_files/output_39_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_39_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_39_6.svg">
+  <img alt="Abbildung 8: Anteil Fälle mit dokumentierter OP beim Hodenkrebs" src="./img/report_files/output_39_6.svg">
 </picture>
     
 
@@ -625,9 +625,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_41_7.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_41_7.svg">
-  <img alt="Abbildung 9: Anteil Fälle mit Strahlentherapie und BET bei C50" src="report_files/output_41_7.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_41_7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_41_7.svg">
+  <img alt="Abbildung 9: Anteil Fälle mit Strahlentherapie und BET bei C50" src="./img/report_files/output_41_7.svg">
 </picture>
     
 
@@ -679,9 +679,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_43_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_43_6.svg">
-  <img alt="Abbildung 10: Anteil Fälle mit systemischer Therapie bei akut verlaufenden Leukämien und Lymphomen" src="report_files/output_43_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_43_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_43_6.svg">
+  <img alt="Abbildung 10: Anteil Fälle mit systemischer Therapie bei akut verlaufenden Leukämien und Lymphomen" src="./img/report_files/output_43_6.svg">
 </picture>
     
 
@@ -721,9 +721,9 @@ and left(z_n_p_1,1) in ('1','2')
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_45_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_45_6.svg">
-  <img alt="Abbildung 11: Anteil Fälle mit systemischer Therapie bei bösartigen Tumoren des Kolons" src="report_files/output_45_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_45_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_45_6.svg">
+  <img alt="Abbildung 11: Anteil Fälle mit systemischer Therapie bei bösartigen Tumoren des Kolons" src="./img/report_files/output_45_6.svg">
 </picture>
     
 
@@ -762,9 +762,9 @@ and z_op_order = 1
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_47_6.png">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_47_6.png">
-  <img alt="Abbildung 12: Abstand in Tagen zwischen Diagnosedatum und erster OP (alle Diagnosen), nach Bundesland (Box-Whisker-Plots, logarithmische Darstellung)" src="report_files/output_47_6.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_47_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_47_6.png">
+  <img alt="Abbildung 12: Abstand in Tagen zwischen Diagnosedatum und erster OP (alle Diagnosen), nach Bundesland (Box-Whisker-Plots, logarithmische Darstellung)" src="./img/report_files/output_47_6.png">
 </picture>
     
 
@@ -847,9 +847,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_50_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_50_6.svg">
-  <img alt="Abbildung 13: Anteil von Frauen mit Verlaufsereignissen (Rezidiv oder Metastase)" src="report_files/output_50_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_50_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_50_6.svg">
+  <img alt="Abbildung 13: Anteil von Frauen mit Verlaufsereignissen (Rezidiv oder Metastase)" src="./img/report_files/output_50_6.svg">
 </picture>
     
 
@@ -862,9 +862,9 @@ Abbildung 14: Verteilung der Verlaufsereignisse bis Ende 2023 nach Brustkrebsdia
 
     
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_52_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_52_1.png">
-  <img alt="png" src="report_files/output_52_1.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_52_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_52_1.png">
+  <img alt="png" src="./img/report_files/output_52_1.png">
 </picture>
     
 
@@ -910,9 +910,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_54_8.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_54_8.svg">
-  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="report_files/output_54_8.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_54_7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_54_7.svg">
+  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="./img/report_files/output_54_7.svg">
 </picture>
     
 
@@ -925,9 +925,9 @@ Abbildung 16: Verteilung der Verlaufsereignisse bis Ende 2023 nach Darmkrebsdiag
 
     
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_56_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_56_1.png">
-  <img alt="png" src="report_files/output_56_1.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_56_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_56_1.png">
+  <img alt="png" src="./img/report_files/output_56_1.png">
 </picture>
     
 
@@ -1081,14 +1081,14 @@ Das öffentliche Antragsverzeichnis bietet einen Überblick über derzeit in Bea
 <br>
 
 <!-- <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/markdown_69_normal_image_0.png">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/markdown_69_normal_image_0.png">
-  <img alt="Abbildung 17" src="report_files/markdown_69_normal_image_0.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/markdown_69_normal_image_0.png">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/markdown_69_normal_image_0.png">
+  <img alt="Abbildung 17" src="./img/report_files/markdown_69_normal_image_0.png">
 </picture> -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/markdown_69_normal_image_0.png">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/markdown_69_normal_image_0.png">
-  <img alt="Abbildung 17" src="report_files/markdown_69_normal_image_0.png" width="75%">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/markdown_69_normal_image_0.png">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/markdown_69_normal_image_0.png">
+  <img alt="Abbildung 17" src="./img/report_files/markdown_69_normal_image_0.png" width="75%">
 </picture>
 
 <br>
@@ -1164,9 +1164,9 @@ Das jährliche Antragsvolumen hat sich über die letzten Jahren deutlich erhöht
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_76_1.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_76_1.svg">
-  <img alt="Abbildung 18: Anzahl Anträge nach Datensatz" src="report_files/output_76_1.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_76_1.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_76_1.svg">
+  <img alt="Abbildung 18: Anzahl Anträge nach Datensatz" src="./img/report_files/output_76_1.svg">
 </picture>
     
 
@@ -1180,9 +1180,9 @@ Grundsätzlich können Einzelfalldaten oder zusammenfassende (aggregierte) Daten
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_78_1.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_78_1.svg">
-  <img alt="Abbildung 19: Anzahl Anträge nach Datentyp" src="report_files/output_78_1.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_78_1.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_78_1.svg">
+  <img alt="Abbildung 19: Anzahl Anträge nach Datentyp" src="./img/report_files/output_78_1.svg">
 </picture>
     
 
@@ -1196,9 +1196,9 @@ Fasst man die im Zeitraum 2022 bis 2025 eingegangenen Datennutzungsanträge ents
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_80_1.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_80_1.svg">
-  <img alt="Abbildung 20: Anzahl Anträge nach Entität" src="report_files/output_80_1.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_80_1.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_80_1.svg">
+  <img alt="Abbildung 20: Anzahl Anträge nach Entität" src="./img/report_files/output_80_1.svg">
 </picture>
     
 
@@ -1212,9 +1212,9 @@ Mit der Verfügbarkeit klinischer Krebsregisterdaten hat sich das Interesse von 
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_82_1.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_82_1.svg">
-  <img alt="Abbildung 21: Anzahl Anträge nach Einrichtung" src="report_files/output_82_1.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_82_1.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_82_1.svg">
+  <img alt="Abbildung 21: Anzahl Anträge nach Einrichtung" src="./img/report_files/output_82_1.svg">
 </picture>
     
 
@@ -1248,9 +1248,9 @@ Im Jahr 2025 wurde für knapp ein Drittel aller in diesem Jahr eingegangenen Dat
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="report_files_dark/output_85_1.svg">
-  <source media="(prefers-color-scheme: light)" srcset="report_files/output_85_1.svg">
-  <img alt="Abbildung 22: Anzahl Anträge nach Gebührenbefreiung" src="report_files/output_85_1.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_85_1.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_85_1.svg">
+  <img alt="Abbildung 22: Anzahl Anträge nach Gebührenbefreiung" src="./img/report_files/output_85_1.svg">
 </picture>
     
 

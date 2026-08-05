@@ -29,7 +29,7 @@ select
         t.z_icd10,
         t.z_icd10_3d,
         t.Diagnosesicherung,
-        left(t.Inzidenzort::text,2)::tinyint as bl,
+        left(t.Inzidenzort,2)::tinyint as bl,
         Diagnosedatum,
         z_period_diag_death_day,
         z_m_pc_1,
