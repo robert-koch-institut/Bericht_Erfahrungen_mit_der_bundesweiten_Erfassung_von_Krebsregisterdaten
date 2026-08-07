@@ -105,8 +105,8 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
 - Relative Balkendiagramme enthalten zum Gesamtvergleich ein zusätzliches Element `Total`.
 - Die verwendeten Filter lassen sich anhand der ausklappbaren SQL-Abfragen exakt nachvollziehen.
 - Die in den Diagrammen angegebene Fallzahl `n=` weist auf die zugrunde liegende Grundgesamtheit hin.
-- Die in den Diagrammen verwendeten aggregierten Daten sind in einem [Ordner](https://github.com/smeisegeier/cancerdata-quality/tree/dev/src/section-12-report/data) verfügbar.
-- Der Quellcode dieses Berichts ist als [Juypter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
+- Die in den Diagrammen verwendeten aggregierten Daten sind in einem [Ordner](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/tree/main/src/data) verfügbar.
+- Der Quellcode dieses Berichts ist als [Juypter Notebook verfügbar](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/blob/main/src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
 
 **Datenstand: Diagnosejahr 2023**
 
@@ -115,7 +115,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-07 13:15:04
+    document created:        2026-08-07 14:48:02
 
 
 
