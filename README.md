@@ -1,6 +1,39 @@
+
+
+Dokumentation  
+
 # <a id='toc1_'></a>[Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten](#toc0_)
 
-**Inhalt**<a id='toc0_'></a>    
+<br> 
+<br> 
+<br> 
+
+[**Stefan Meisegeier**](https://orcid.org/0000-0003-2347-1836)&sup1;, [**Maren Imhoff**](https://orcid.org/0009-0001-0030-566X)&sup1;, & [**Klaus Kraywinkel**](https://orcid.org/0000-0002-9250-6003)&sup1;
+
+<br> 
+
+
+
+&emsp;&emsp;&sup1; [Robert Koch-Institut](https://www.rki.de/) | [ZfKD - Zentrum für Krebsregisterdaten](https://www.krebsdaten.de/)
+
+
+<br> 
+
+<!--
+**Zitieren**   
+Robert Koch-Institut. (2026). Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten. Zenodo. [https://doi.org/10.5281/zenodo.xxxxxx](https://doi.org/10.5281/zenodo.xxxxxx)
+-->
+
+
+<br>
+
+**Zusammenfassung**    
+Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten nach § 12 BKRG – Datenqualität, Zusammenarbeit mit den Krebsregistern und Bearbeitung von Datennutzungsanträgen des ZfKD.
+
+<br>
+
+**Inhaltsverzeichnis**<a id='toc0_'></a>   
+
 - [Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten](#toc1_)    
   - [1 Informationen zum Dokument](#toc1_1_)    
   - [2 Einführung](#toc1_2_)    
@@ -63,8 +96,6 @@
 <!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
 
 
-<br>
-
 ## <a id='toc1_1_'></a>[1 Informationen zum Dokument](#toc0_)
 
 - Der vorliegende Bericht wird überarbeitet, sobald eine für die dargestellten Auswertungen relevante Aktualisierung der Datenlieferungen der Krebsregister vorliegt. Frühere Versionen des Berichts bleiben über die Versionshistorie des GitHub-Repositoriums weiterhin einsehbar und zitierfähig.
@@ -74,7 +105,7 @@
 - Die verwendeten Filter lassen sich anhand der ausklappbaren SQL-Abfragen exakt nachvollziehen.
 - Die in den Diagrammen angegebene Fallzahl `n=` weist auf die zugrunde liegende Grundgesamtheit hin.
 - Die in den Diagrammen verwendeten aggregierten Daten sind in einem [Ordner](https://github.com/smeisegeier/cancerdata-quality/tree/dev/src/section-12-report/data) verfügbar.
-- Der Quellcode dieses Berichts ist als [Juypter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
+- Der Quellcode dieses Berichts ist als [Jupyter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
 
 **Datenstand: Diagnosejahr 2023**
 
@@ -1271,3 +1302,19 @@ Entgegen teilweise bei Einführung der bundesweiten klinischen Krebsregistrierun
 Die Verknüpfung mit den Abrechnungsdaten wird auch die Beurteilung wichtiger Aspekte der Datenqualität erleichtern, dies gilt in beide Richtungen: In den Krebsregistern ist eine höhere Validität der Diagnosen zu erwarten, während in Abrechnungsdaten Operationen, aber auch ambulante Therapien für GKV-Versicherte vollständiger abgebildet sein dürften.
 
 Der vorliegende Bericht kann nicht alle Aspekte der Datenqualität der Krebsregister umfassend behandeln, auch weil das ZfKD in seinen Ressourcen nicht mit seinen Aufgaben und der Komplexität der Daten mitgewachsen ist. Der weitere Auf- und Ausbau eines bundesweiten Datenqualitätsmonitorings ist jedoch für das ZfKD ein wichtiges Anliegen, von dem sowohl Krebsregister als auch Forschende profitieren sollen.
+
+
+
+## Hinweise zur Nachnutzung des Berichts  
+
+Berichte des RKI werden u.àauf [Zenodo.org](http://Zenodo.org/) und [GitHub.com](http://GitHub.com/) bereitgestellt:  
+
+- [https://zenodo.org/communities/robertkochinstitut](https://zenodo.org/communities/robertkochinstitut)  
+- [https://github.com/robert-koch-institut](https://github.com/robert-koch-institut)  
+
+
+### Lizenz  
+
+Der Bericht "Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten" ist lizenziert unter der [Creative Commons Namensnennung 4.0 International Public License | CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de).  
+
+Die im Bericht bereitgestellten Informationen sind, unter Bedingung der Namensnennung des Robert Koch-Instituts als Quelle, frei verfügbar. Das bedeutet, jede Person hat das Recht die Daten zu verarbeiten und zu verändern, Derivate des Berichts zu erstellen und sie für kommerzielle und nicht kommerzielle Zwecke zu nutzen. Weitere Informationen zur Lizenz finden sich in der [LICENSE](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/blob/main/LICENSE) bzw. [LIZENZ](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/blob/main/LIZENZ) Datei des Berichts.  
