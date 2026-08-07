@@ -1,6 +1,4 @@
-
-
-Dokumentation  
+Dokumentation
 
 # <a id='toc1_'></a>[Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten](#toc0_)
 
@@ -32,8 +30,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
 
 <br>
 
-**Inhaltsverzeichnis**<a id='toc0_'></a>   
-
+**Inhalt**<a id='toc0_'></a>    
 - [Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten](#toc1_)    
   - [1 Informationen zum Dokument](#toc1_1_)    
   - [2 Einführung](#toc1_2_)    
@@ -85,6 +82,8 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     - [6.5 Nach Auswertungszielen und Forschungszweck](#toc1_6_5_)    
     - [6.6 Nach Gebührenpflichtigkeit](#toc1_6_6_)    
   - [7 Fazit und Perspektiven](#toc1_7_)    
+  - [8 Hinweise zur Nachnutzung des Berichts](#toc1_8_)    
+    - [Lizenz](#toc1_8_1_)    
 
 <!-- vscode-jupyter-toc-config
 	numbering=false
@@ -96,16 +95,18 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
 <!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
 
 
+<br>
+
 ## <a id='toc1_1_'></a>[1 Informationen zum Dokument](#toc0_)
 
 - Der vorliegende Bericht wird überarbeitet, sobald eine für die dargestellten Auswertungen relevante Aktualisierung der Datenlieferungen der Krebsregister vorliegt. Frühere Versionen des Berichts bleiben über die Versionshistorie des GitHub-Repositoriums weiterhin einsehbar und zitierfähig.
-- Der Bericht ist [alternativ als pdf verfügbar](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/raw/main/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten.pdf), wird jedoch für die online Darstellung optimiert.
+- Der Bericht kann auf diesem link [als pdf heruntergeladen werden](https://github.com/robert-koch-institut/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten/raw/main/Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten.pdf), ist jedoch für die online Darstellung optimiert.
 - Die jeweils angewendeten Filter sind für jede Auswertung dargestellt, jeweils zur besseren Einordnung als Anteil an der Gesamtzahl aller Krebsfälle.
 - Relative Balkendiagramme enthalten zum Gesamtvergleich ein zusätzliches Element `Total`.
 - Die verwendeten Filter lassen sich anhand der ausklappbaren SQL-Abfragen exakt nachvollziehen.
 - Die in den Diagrammen angegebene Fallzahl `n=` weist auf die zugrunde liegende Grundgesamtheit hin.
 - Die in den Diagrammen verwendeten aggregierten Daten sind in einem [Ordner](https://github.com/smeisegeier/cancerdata-quality/tree/dev/src/section-12-report/data) verfügbar.
-- Der Quellcode dieses Berichts ist als [Jupyter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
+- Der Quellcode dieses Berichts ist als [Juypter Notebook verfügbar](./src/report.ipynb) und kann ausgeführt werden, sofern entweder die Krebsdatenbank vorliegt oder die [öffentliche Version mit Spieldaten](https://gitlab.opencode.de/robert-koch-institut/zentrum-fuer-krebsregisterdaten/cancerdata-generator).
 
 **Datenstand: Diagnosejahr 2023**
 
@@ -114,7 +115,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-05 12:47:47
+    document created:        2026-08-07 13:15:04
 
 
 
@@ -264,9 +265,9 @@ and z_kkr <> 7
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_23_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_23_6.svg">
-  <img alt="Abbildung 1: Fehlender Anteil zum Grading" src="./img/report_files/output_23_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_24_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_24_6.svg">
+  <img alt="Abbildung 1: Fehlender Anteil zum Grading" src="./img/report_files/output_24_6.svg">
 </picture>
     
 
@@ -326,9 +327,9 @@ and
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_25_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_25_6.svg">
-  <img alt="Abbildung 2: Anteile übermittelter pathologischer und klinischer T-Stadien" src="./img/report_files/output_25_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_26_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_26_6.svg">
+  <img alt="Abbildung 2: Anteile übermittelter pathologischer und klinischer T-Stadien" src="./img/report_files/output_26_6.svg">
 </picture>
     
 
@@ -390,9 +391,9 @@ and z_tum_id in (select distinct z_tum_id from OPS where left(ops.Code,1) in ('5
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_27_6.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_27_6.svg">
-  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_27_6.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_28_7.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_28_7.svg">
+  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_28_7.svg">
 </picture>
     
 
@@ -1304,16 +1305,19 @@ Die Verknüpfung mit den Abrechnungsdaten wird auch die Beurteilung wichtiger As
 Der vorliegende Bericht kann nicht alle Aspekte der Datenqualität der Krebsregister umfassend behandeln, auch weil das ZfKD in seinen Ressourcen nicht mit seinen Aufgaben und der Komplexität der Daten mitgewachsen ist. Der weitere Auf- und Ausbau eines bundesweiten Datenqualitätsmonitorings ist jedoch für das ZfKD ein wichtiges Anliegen, von dem sowohl Krebsregister als auch Forschende profitieren sollen.
 
 
+<br>
 
-## Hinweise zur Nachnutzung des Berichts  
+## <a id='toc1_8_'></a>[8 Hinweise zur Nachnutzung des Berichts](#toc0_)
 
-Berichte des RKI werden u.àauf [Zenodo.org](http://Zenodo.org/) und [GitHub.com](http://GitHub.com/) bereitgestellt:  
+Berichte des RKI werden u.a auf [Zenodo.org](http://Zenodo.org/) und [GitHub.com](http://GitHub.com/) bereitgestellt:  
 
 - [https://zenodo.org/communities/robertkochinstitut](https://zenodo.org/communities/robertkochinstitut)  
 - [https://github.com/robert-koch-institut](https://github.com/robert-koch-institut)  
 
 
-### Lizenz  
+<br>
+
+### <a id='toc1_8_1_'></a>[Lizenz](#toc0_)
 
 Der Bericht "Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten" ist lizenziert unter der [Creative Commons Namensnennung 4.0 International Public License | CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de).  
 
