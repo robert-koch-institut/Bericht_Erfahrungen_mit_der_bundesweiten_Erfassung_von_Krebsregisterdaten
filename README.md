@@ -6,7 +6,7 @@ Dokumentation
 <br> 
 <br> 
 
-[**Stefan Meisegeier**](https://orcid.org/0000-0003-2347-1836)&sup1;, [**Maren Imhoff**](https://orcid.org/0009-0001-0030-566X)&sup1;, & [**Klaus Kraywinkel**](https://orcid.org/0000-0002-9250-6003)&sup1;
+[**Klaus Kraywinkel**](https://orcid.org/0000-0002-9250-6003)&sup1;, [**Stefan Meisegeier**](https://orcid.org/0000-0003-2347-1836)&sup1;, & [**Maren Imhoff**](https://orcid.org/0009-0001-0030-566X)&sup1;
 
 <br> 
 
@@ -115,7 +115,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-08-07 14:48:02
+    document created:        2026-08-11 10:18:55
 
 
 
@@ -391,9 +391,9 @@ and z_tum_id in (select distinct z_tum_id from OPS where left(ops.Code,1) in ('5
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_28_7.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_28_7.svg">
-  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_28_7.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_28_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_28_6.svg">
+  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_28_6.svg">
 </picture>
     
 
