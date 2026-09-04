@@ -82,7 +82,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
   - [6.6 Nach Gebührenpflichtigkeit](#toc6_6_)    
 - [7 Fazit und Perspektiven](#toc7_)    
 - [8 Hinweise zur Nachnutzung des Berichts](#toc8_)    
-  - [8.1 Lizenz](#toc8_1_)    
+- [9 Lizenz](#toc9_)    
 
 <!-- vscode-jupyter-toc-config
 	numbering=false
@@ -114,7 +114,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-09-04 13:10:38
+    document created:        2026-09-04 14:33:05
 
 
 
@@ -1316,7 +1316,7 @@ Berichte des RKI werden u.a auf [Zenodo.org](http://Zenodo.org/) und [GitHub.com
 
 <br>
 
-### <a id='toc8_1_'></a>[8.1 Lizenz](#toc0_)
+## <a id='toc9_'></a>[9 Lizenz](#toc0_)
 
 Der Bericht "Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten" ist lizenziert unter der [Creative Commons Namensnennung 4.0 International Public License | CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de).  
 
