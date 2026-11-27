@@ -17,11 +17,19 @@ Dokumentation
 
 <br> 
 
-<!--
-**Zitieren**   
-Robert Koch-Institut. (2026). Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten. Zenodo. [https://doi.org/10.5281/zenodo.xxxxxx](https://doi.org/10.5281/zenodo.xxxxxx)
--->
 
+**Zitieren**   
+<!-- CITATION_START: {"citation_style": "apa", "markdown_style": "plain"} -->
+Kraywinkel, K., Meisegeier, S., & Imhoff, M. (2026). Bericht_Erfahrungen_mit_der_bundesweiten_Erfassung_von_Krebsregisterdaten (Versions 2026-09-09). Zenodo. [https://doi.org/10.5281/zenodo.22673754](https://doi.org/10.5281/zenodo.22673754)
+<!-- CITATION_END -->
+
+<br>
+
+---
+
+E-Mail-Adresse für Rückmeldungen: [krebsdaten@rki.de](mailto:krebsdaten@rki.de)  
+
+---
 
 <br>
 
@@ -114,7 +122,7 @@ Bericht über Erfahrungen mit der bundesweiten Erfassung von Krebsregisterdaten 
     last kkr data import:    2025-09-30
     sql table created:       2025-11-11 11:52:01
     doi:                     10.18444/5.03.01.0005.0021.0002
-    document created:        2026-09-04 14:33:05
+    document created:        2026-11-27 17:44:36
 
 
 
@@ -390,9 +398,9 @@ and z_tum_id in (select distinct z_tum_id from OPS where left(ops.Code,1) in ('5
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_28_7.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_28_7.svg">
-  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_28_7.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_28_8.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_28_8.svg">
+  <img alt="Abbildung 3: Anteile übermittelter pT-Stadien bei dokumentierter Operation" src="./img/report_files/output_28_8.svg">
 </picture>
     
 
@@ -941,9 +949,9 @@ and ifnull(z_period_diag_death_day,181) >= 180
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_54_8.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_54_8.svg">
-  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="./img/report_files/output_54_8.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./img/report_files_dark/output_54_6.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./img/report_files/output_54_6.svg">
+  <img alt="Abbildung 15: Anteil von Personen mit Verlaufsereignissen (Rezidiven oder Metastasen)" src="./img/report_files/output_54_6.svg">
 </picture>
     
 
